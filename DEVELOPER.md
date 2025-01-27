@@ -30,13 +30,16 @@ Antes de começar, certifique-se de ter os seguintes requisitos instalados:
 2. Configure as variáveis de ambiente no arquivo ```.env```
     ```bash
    DATABASE_URL=postgres://<user>:<password>@<host>:<port>/<database>
-3. Execute as migrações para criar as tabelas no banco de dados:
+3. Instale as dependências:
+    ```bash
+   npm install --force
+4. Execute as migrações para criar as tabelas no banco de dados:
     ```bash
    npx drizzle-kit push
-4. Inicie o servidor de desenvolvimento:
+5. Inicie o servidor de desenvolvimento:
     ```bash
    npm run dev
-5. O projeto estará disponível em http://localhost:3000 com a documentação do Swagger
+6. O projeto estará disponível em http://localhost:3000 com a documentação do Swagger
 
 ## 🌐 **Deploy para Produção**
 1. Certifique-se de ter configurado as variáveis de ambiente no servidor de produção. Um exemplo de configuração no arquivo ```.env```:
