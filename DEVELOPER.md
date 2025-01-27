@@ -32,7 +32,7 @@ Antes de começar, certifique-se de ter os seguintes requisitos instalados:
    DATABASE_URL=postgres://<user>:<password>@<host>:<port>/<database>
 3. Instale as dependências:
     ```bash
-   npm ci
+   npm install
 3. Instale o drizzle-kit:
     ```bash
    npm install -g drizzle-kit
