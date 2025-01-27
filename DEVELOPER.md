@@ -32,7 +32,10 @@ Antes de começar, certifique-se de ter os seguintes requisitos instalados:
    DATABASE_URL=postgres://<user>:<password>@<host>:<port>/<database>
 3. Instale as dependências:
     ```bash
-   npm install --force
+   npm ci
+3. Instale o drizzle-kit:
+    ```bash
+   npm install -g drizzle-kit
 4. Execute as migrações para criar as tabelas no banco de dados:
     ```bash
    npx drizzle-kit push
